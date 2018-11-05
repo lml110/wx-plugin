@@ -1,4 +1,4 @@
-# 常用组件
+# 微信小程序常用组件
 
 https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wxe1adf0c2c539a0f3&token=&lang=zh_CN
 
