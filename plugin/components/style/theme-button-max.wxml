@@ -1,0 +1,1 @@
+<button class="redbtn" hover-class="redbtn-hover" bindtap="query_click" style="{{isbg&&styleStr2}}">{{title}}</button>

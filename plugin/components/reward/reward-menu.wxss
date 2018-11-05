@@ -1,0 +1,10 @@
+.level-fixed {
+    margin-top: 24rpx;
+}
+.notice {
+    margin: 24rpx 0;
+    padding: 24rpx;
+    border: 1px solid #ffce6f;
+    background: #fff4d3;
+    font-size: 26rpx;
+}

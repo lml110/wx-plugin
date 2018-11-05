@@ -1,0 +1,32 @@
+<view class="level-scroll">
+    <level-scroll navlist="{{navlist}}" bind:clickEvent="navi_click" navcur="{{navcur}}" />
+</view>
+<view class="level-fixebox">
+    <level-fixebox navlist="{{navlist1}}" bind:clickEvent="navi_click"/>
+</view>
+
+<view class="form_wrap">
+   <view class="form_view bdall_b " catchtap="address_show">
+        <input placeholder="您所在地区" class="form_input flex" name="address" disabled value="{{region_txt}}" />
+    </view>
+</view>
+
+<address-picker show="{{pickstate}}" value="{{init_region}}" bind:cancelEvent="pick_cancel" bind:confirmEvent="picker_confirm" />
+
+<theme-button title="提示弹窗" bind:clickEvent="apply_tips" />
+
+<theme-button-max title="取消原因弹窗" bind:clickEvent="apply_cancel" />
+
+<date-choose bind:clickEvent="query_click" start-date="{{startDate}}" isEnds="{{false}}" end-date="{{endDate}}" />
+
+<reward-menu bind:queryEvent="query_click" bind:tabEvent="tab_click" />
+
+<dialog title="提示" isShow="{{isdialog}}" cancelText="哈哈">我是谁</dialog>
+
+<popup-textarea1 bind:confirmEvent="confirm_click"  isShow="{{isPopup1}}" title="否决取消" />
+
+<view class="api_wrap" >
+	<block wx:for="{{ treeList }}" wx:key="index" wx:for-item="tree1">
+		<Tree-node dataList="{{tree1}}" catch:clickEvent="node_click" catch:popupEvent="node_popup" />
+	</block>
+</view>

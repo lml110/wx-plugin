@@ -1,0 +1,15 @@
+/* 主题按钮 == 导航，提交*/
+
+button.redbtn {
+    height: 90rpx;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    font-size: 28rpx;
+}
+button.redbtn-hover {
+    opacity: .7;
+}

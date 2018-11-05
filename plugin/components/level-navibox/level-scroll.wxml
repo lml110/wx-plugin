@@ -1,0 +1,7 @@
+<scroll-view class="level-navbox bdb" scroll-x="true" scroll-left="{{(nav_cur>3)?unitW*(nav_cur-3):0}}">
+    <block wx:for="{{ navlist }}" wx:key="index">
+        <view class="navli {{(index==nav_cur)&&'navli_cur'}}" style="{{(index==nav_cur)&&styleStr1}}" data-index="{{index}}" bindtap="navli_click">{{item.txt}}
+            <view wx:if="{{index==0}}" class="navline" style="{{styleStr2}}" animation="{{animaline}}"></view>
+        </view>
+    </block>
+</scroll-view>

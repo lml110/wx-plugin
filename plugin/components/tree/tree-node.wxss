@@ -1,0 +1,59 @@
+.tree-list {
+    padding: 14rpx 30rpx;
+    background-color: #fff;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    font-size: 26rpx;
+}
+.bdb {
+    position: relative;
+}
+.bdb:after,
+.bdt:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    content: '';
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+}
+.tree-img{
+	width: 60rpx;
+	height: 60rpx;
+	display: block;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.tree-icon1{
+	background: url(http://cdn.xiaojiankeji.com/Images/zmws/open-list.png) center no-repeat;
+}
+.tree-icon2{
+	background: url(http://cdn.xiaojiankeji.com/Images/zmws/close-list.png) center no-repeat;
+}
+.tree-icons{
+	width: 36rpx;
+	padding-right: 14rpx;
+}
+.tree-icon{
+	width: 36rpx;
+	height: 36rpx;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+.tree-title{
+	text-decoration: underline;
+}
+.tree-cont{
+	padding-left: 16rpx;
+}
+.tree-box{
+	padding-left: 40rpx;
+	background-color: #fff;
+}
+
+.tree-num{
+	margin-left: 12rpx;
+}

@@ -1,0 +1,8 @@
+<view class="notice">
+    <view>收入相关：与您有关系且需要您去索取的明细。</view>
+    <view>支出相关：与您有关系且需要您去支出的明细。</view>
+</view>
+<view class="level-fixed">
+    <level-fixed navlist="{{navlist}}" bind:clickEvent="navi_click" />
+</view>
+<date-choose bind:clickEvent="query_click" start-date="{{startDate}}" end-date="{{endDate}}" />

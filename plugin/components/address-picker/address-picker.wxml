@@ -1,0 +1,18 @@
+<view class="ovleybg" wx:if="{{pickstate}}"></view>
+<view class="bombbox {{(pickstate)?'active':''}}">
+    <view class="bomb-btncas">
+        <view class="calbtn activebtn fl" bindtap="pick_hide">取消</view>
+        <view class="confirmbtn activebtn fr" bindtap="picker_confirm">确定</view>
+    </view>
+    <picker-view class="pickerbox" indicator-style="height: 34px;" value="{{pickval}}" bindchange="PickChange" wx:if="{{pickstate}}">
+        <picker-view-column>
+            <view wx:for="{{province}}" wx:key="unique" class="pickerlis">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{city}}" wx:key="unique" class="pickerlis">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{area}}" wx:key="unique" class="pickerlis">{{item}}</view>
+        </picker-view-column>
+    </picker-view>
+</view>

@@ -1,0 +1,13 @@
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <view class="popup-tit bdb">{{ title }}</view>
+        <view class="popup-cont">
+            <textarea name="textarea" placeholder="{{ title }}" fixed class="textarea" bindinput="_popupInput" value="{{area_val}}" />
+        </view>
+        <view class="popup-btns bdt">
+            <view class="popup-btn popup-btn-bdr" catchtap='_cancelEvent' wx:if="{{cancelText}}">{{ cancelText }}</view>
+            <view class="popup-btn" catchtap='_confirmEvent'>{{ confirmText }}</view>
+        </view>
+    </view>
+</view>

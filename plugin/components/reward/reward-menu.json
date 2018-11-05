@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "level-fixed": "../level-navibox/level-fixebox",
+        "date-choose": "../date-choose/date-choose"
+    }
+}

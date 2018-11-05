@@ -1,0 +1,21 @@
+
+<view class="tree-list bdb"  >
+	<view class="tree-icons" >
+		<view class="tree-icon {{dataList.children.length?'tree-icon2':'tree-icon1'}}" wx:if="{{dataList[key]}}" catchtap="open_click" data-item="{{dataList}}" ></view>
+	</view>
+	
+	<image class="tree-img" src="{{dataList.HeadUrl}}" wx:if="{{dataList.HeadUrl}}" mode="aspectFill"></image>
+	<view class="tree-cont">
+		<text class="tree-title" catchtap="popup_click" data-memberid="{{dataList.MemberId}}">{{ dataList.Name }}</text>
+		<text class="tree-num" wx:if="{{dataList[key]}}">({{dataList[key]}})</text>
+	</view>
+	
+</view>
+
+<view class="tree-box bdb" wx:if="{{dataList.children.length>0}}">
+<block wx:for="{{ dataList.children }}" wx:key="index">
+	<Tree-node dataList="{{item}}" catch:clickEvent="open_click" catch:popupEvent="popup_click" key="{{key}}" />
+	<!-- <Tree-node dataList="{{item}}" bind:clickEvent="tree_openclick" ></Tree-node> -->
+</block>
+</view>
+

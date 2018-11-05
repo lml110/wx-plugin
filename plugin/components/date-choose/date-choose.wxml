@@ -1,0 +1,18 @@
+<view class="date-choose {{isbgColor?'isbg_color':'no_color'}}">
+    <view class="start_dates date_boxs">
+        <view class="date-lab">开始</view>
+        <picker mode="date" class="date-inputs" value="{{startDate}}" end="{{ends}}" bindchange="startDateChange">
+            <view class="date-input">{{startDate}}</view>
+        </picker>
+    </view>
+    <view class="date-middle">-</view>
+    <view class="end_dates date_boxs">
+        <view class="date-lab">结束</view>
+        <picker mode="date" class="date-inputs" value="{{endDate}}" end="{{ends}}" bindchange="endDateChange">
+            <view class="date-input">{{endDate}}</view>
+        </picker>
+    </view>
+    <view class="redbtn_box">
+        <button class="redbtn" hover-class="redbtn-hover" bindtap="query_click" style="{{styleStr2}}">{{btntxt}}</button>
+    </view>
+</view>

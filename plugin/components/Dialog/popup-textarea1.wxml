@@ -1,0 +1,20 @@
+<!-- 
+<dialog bind:confirmEvent="dialog_click"  isShow="{{isdialog}}" title="否决原因" />
+<dialog bind:confirmEvent="confirm_click" isShow="{{isPopup}}" />
+ -->
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <view class='wx-dialog-title'>{{ title }}</view>
+        <view class="dialog-content">
+            <view class="dialog_main bdall_b">
+                <textarea name="textarea" placeholder="{{ title }}" fixed class="dialog_textarea" bindinput="_popupInput" value="{{area_val}}" />
+            </view>
+        </view>
+        <view class='wx-dialog-footer'>
+            <view class='wx-dialog-btn wx-dialog-cancel' catchtap='_cancelEvent' wx:if="{{cancelText}}">{{ cancelText }}</view>
+            <view class='wx-dialog-btn wx-dialog-confirm {{isloading?"wx-dialog-disable":""}}' style="color:{{confirmColor}}" catchtap='_confirmEvent'>{{ confirmText }}</view>
+        </view>
+    </view>
+</view>
+

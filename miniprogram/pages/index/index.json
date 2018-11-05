@@ -1,0 +1,18 @@
+{
+    "usingComponents": {
+        "level-scroll": "plugin://myPlugin/level-scroll",
+        "level-fixebox": "plugin://myPlugin/level-fixebox",
+
+        "theme-button": "plugin://myPlugin/theme-button",
+        "theme-button-max": "plugin://myPlugin/theme-button-max",
+
+        "date-choose": "plugin://myPlugin/date-choose",
+        "reward-menu": "plugin://myPlugin/reward-menu",
+
+        "dialog": "plugin://myPlugin/dialog",
+        "popup-textarea1": "plugin://myPlugin/popup-textarea1",
+
+        "Tree-node": "plugin://myPlugin/Tree-node-txt",
+        "address-picker": "plugin://myPlugin/address-picker"
+    }
+}

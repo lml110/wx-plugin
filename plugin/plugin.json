@@ -1,0 +1,23 @@
+{
+    "publicComponents": {
+        "level-scroll": "components/level-navibox/level-scroll",
+	  	"level-fixebox": "components/level-navibox/level-fixebox",
+
+	  	"date-choose": "components/date-choose/date-choose",
+	  	"reward-menu": "components/reward/reward-menu",
+
+	  	"dialog": "components/Dialog/dialog",
+	  	"dialog-lml": "components/Dialog/dialog_lml",
+	  	"popup-textarea": "components/Dialog/popup-textarea",
+	  	"popup-textarea1": "components/Dialog/popup-textarea1",
+
+	  	"theme-button": "components/style/theme-button",
+	  	"theme-button-max": "components/style/theme-button-max",
+
+	  	"Tree-node": "components/tree/tree-node",
+	  	"Tree-node-txt": "components/tree/tree-node-txt",
+
+	  	"address-picker": "components/address-picker/address-picker"
+    },
+    "main": "index.js"
+}

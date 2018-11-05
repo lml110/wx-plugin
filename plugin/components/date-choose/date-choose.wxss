@@ -1,0 +1,65 @@
+.date-choose {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    padding: 0 24rpx;
+    height: 100rpx;
+    font-size: 26rpx;
+}
+.date-choose.isbg_color{
+    background-color: #fff;
+}
+.date_boxs {
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.date-inputs {
+    -webkit-box-flex: 1;
+}
+.date-input {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 46rpx;
+    border: 1px solid #ddd;
+    font-size: 26rpx;
+}
+.date-lab {
+    padding-right: 16rpx;
+}
+.date-middle {
+    padding-left: 16rpx;
+    padding-right: 10rpx;
+}
+.redbtn_box {
+    padding-left: 20rpx;
+}
+
+/* 主题按钮 == 导航，提交*/
+
+button.redbtn {
+    background-color: #43b7d1;
+    width: 140rpx;
+    height: 54rpx;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    font-size: 26rpx;
+    color: #fff;
+}
+button.redbtn-hover {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #43b7d1;
+    opacity: .7;
+}
+
+.no_color .date-input{
+    background-color: #fff;
+}

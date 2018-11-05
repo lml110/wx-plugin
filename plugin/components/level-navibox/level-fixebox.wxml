@@ -1,0 +1,13 @@
+<view class="level-navbox bdb" scroll-x="true">
+    <block wx:for="{{ navlist }}" wx:key="index">
+        <view class="navli {{(index==nav_cur)&&'navli_cur'}}" style="{{(index==nav_cur)&&styleStr1}}" data-index="{{index}}" bindtap="navli_click">
+        	<view class="txtbox">
+        		<text class="txt_cont">{{item.txt}}</text>
+				<text class="badges txt_type1" wx:if="{{item.number&&numType==1}}">{{item.number}}</text>
+				<text class="txt_type2" wx:if="{{item.number&&numType==2}}">({{item.number}})</text>
+        	</view>
+
+            <view wx:if="{{index==0}}" class="navline" animation="{{animaline}}"><view class="ii" style="{{styleStr2}}"></view></view>
+        </view>
+    </block>
+</view>

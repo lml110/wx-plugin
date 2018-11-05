@@ -1,0 +1,71 @@
+/* 水平导航切换 */
+.bdb{ position: relative; }
+.bdb:after{bottom: 0; position: absolute; left: 0; right: 0; height: 1px; background-color: #ddd; content: ''; transform: scaleY(0.5); -webkit-transform: scaleY(0.5);}
+.level-navbox {
+    font-size: 28rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    background-color: #fff;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.level-navbox:-webkit-scrollbar {
+    display: none;
+}
+.level-navbox .navli {
+    display: block;
+    position: relative;
+    width: 50%;
+    -webkit-box-flex: 1;
+    text-align: center;
+}
+.level-navbox .navli_cur {
+    position: relative;
+}
+.level-navbox .navli_cur .txt_cont{
+    font-weight: bold;
+}
+
+.level-navbox .navline {
+    height: 5rpx;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+}
+.level-navbox .navline .ii{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 0;
+    height: 100%;
+}
+.badges {
+    display: inline-block;
+    text-align: center;
+    background: #f74c31;
+    color: #fff;
+    font-size: 16rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    border-radius: 30rpx;
+    min-width: 15rpx;
+    padding: 0 8rpx;
+    background-clip: padding-box;
+    vertical-align: middle;
+}
+.txtbox{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+.txt_type1{
+    position: absolute;
+    left: 90%;
+    top: 12%;
+}
